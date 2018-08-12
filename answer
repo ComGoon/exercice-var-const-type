@@ -1,0 +1,63 @@
+<!--Author: Oussoumane Mahaman Madani ( GOMYC{}DE ) -->
+
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: comgoon
+ * Date: 8/12/18
+ * Time: 3:08 AM
+ */
+
+//  1)
+/*
+ * "mavar" -> is invalid cause no "$" sign in before it
+ * "$mavar" -> valid variable
+ * "$var5" -> valid variable
+ * "$_ mavar" -> is invalid cause the space
+ * "$_5var" -> valid variable
+ * "$__élément1" -> valid variable
+ * "$hotel4*" -> is invalid cause it contains "*" in it
+ */
+echo "<br>";
+
+
+
+
+//  2)
+$x="PostgreSQL";
+$y="MySQL";
+$z=&$x;
+$x="PHP 5";
+$y=&$x;
+
+/*$x = "PHP 5"
+ *$y = "PHP 5"
+ *$z = "PHP 5"
+ */
+echo "<br>";
+
+
+
+
+
+//  3)
+//reading the variables using: $GLOBALS
+echo $GLOBALS['x'], "<br />";
+echo $GLOBALS['y'], "<br />";
+echo $GLOBALS['z'], "<br />";
+
+
+
+
+
+echo "<br>";
+//  4)
+$x="7 personnes";
+$y=(integer) $x;
+$x="9E3";
+$z=(double) $x;
+
+echo "$x", "<br />"; //display: 9000 (as 9 raise to the power 3 gives 9000)
+echo "$y", "<br />"; //display: 9000
+echo "$z", "<br />"; //display: 9000
