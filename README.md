@@ -1,0 +1,2 @@
+# exercice-var-const-type
+1- Parmi les variables suivantes, lesquelles ont un nom valide : mavar, $mavar, $var5, $_ mavar, $_5var, $__élément1, $hotel4* ? 2- Donnez les valeurs de $x, $y, $z à la fin du script suivant : $x="PostgreSQL";  $y="MySQL";  $z=&amp;$x;  $x="PHP 5"; $y=&amp;$x; 3- Lisez les valeurs des variables du script de la question 2 à l’aide du tableau $GLOBALS. 4- Donnez la valeur des variables $x, $y, $z à la fin du script : $x="7 personnes";  $y=(integer) $x;  $x="9E3";  $z=(double) $x;
